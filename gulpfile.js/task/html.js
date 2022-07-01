@@ -26,7 +26,8 @@ const html = () => {
     .pipe(size({title: "До сжатия"}))
     .pipe(htmlmin(app.htmlmin))
     .pipe(size({title: "После сжатия"}))
-    .pipe(dest(path.html.dest));
+    .pipe(dest(path.html.dest))
+    .pipe($.browserSync.stream());
 }
 
 module.exports = html;
