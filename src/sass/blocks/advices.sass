@@ -26,6 +26,9 @@
     text-align: center
     color: #737373
 
+    br:nth-child(2)
+        display: none
+
 .advices_list
     padding: 0 92px
 
@@ -59,3 +62,36 @@
 
 .advice_image
     width: 100%
+
+@media (min-width: 1440px)
+    .advices
+        padding-bottom: 76px
+        background-color: #FFFFFF
+
+    .advices_desc 
+        margin-bottom: 46px
+
+        br
+            display: none
+
+        br:nth-child(2)
+            display: block
+
+    .advices_list
+        padding: 0 199px
+        display: flex
+        justify-content: space-between
+
+    .advices_item
+        width: 230px
+        display: flex
+        flex-direction: column
+
+    .advice_image
+        margin-top: 30px
+
+    .advice_text
+        margin-bottom: auto
+
+    .advice_title
+        padding-right: 55px
