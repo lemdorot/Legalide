@@ -24,6 +24,9 @@
     text-align: center
     color: #737373
 
+    br:nth-child(2)
+        display: none
+
 .practice_text 
     font-family: 'Martel'
     font-weight: 700
@@ -49,3 +52,28 @@
 
 .practice_item--blue
     background-color: #295C7A
+
+@media (min-width: 1440px)
+    .practice
+        padding-top: 49px
+    
+    .practice_desc 
+        br
+            display: none
+
+        br:nth-child(2)
+            display: block
+
+    .practice_list
+        display: flex
+        justify-content: center
+
+    .practice_item
+        width: 325px
+        margin-right: 33px
+
+    .practice_item:last-child
+        margin-right: 0
+
+        
+    
