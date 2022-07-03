@@ -15,13 +15,13 @@
                 <ul class="main-navbar_list navbar">
                     <li class="navbar_item">
                         <a href="#" class="navbar_link">
-                            <img src="../img/search-icon.svg" width="24" height="24" alt="Search" class="navbar_icon">
+                            <img src="../img/search-icon.svg" width="24" height="24" alt="Search" class="navbar_icon navbar_icon--search">
                             <span class="visually-hidden">Search</span>
                         </a>
                     </li>
                     <li class="navbar_item">
                         <a href="#" class="navbar_link">
-                            <img src="../img/shopping_cart-icon.svg" width="24" height="22.4" alt="Shopping cart" class="navbar_icon">
+                            <img src="../img/shopping_cart-icon.svg" width="24" height="22.4" alt="Shopping cart" class="navbar_icon navbar_icon--cart">
                             <span class="visually-hidden">Shopping-cart</span>
                         </a>
                     </li>
@@ -58,7 +58,10 @@
                     <button class="page-header_button page-header_button-learn-more">Learn More</button>
                 </div>
             </div>
-            <img src="../img/agent-mobile.png" width="377" height="445" alt="Agent photo" class="page-header_image">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="../img/agent-desktop.png">
+                <img src="../img/agent-mobile.png" width="377" height="445" alt="Agent photo" class="page-header_image">
+              </picture>
         </div>
     </header>
     <main class="page-main">
